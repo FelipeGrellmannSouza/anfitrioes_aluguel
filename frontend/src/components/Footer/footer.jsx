@@ -14,8 +14,8 @@ const Footer = () => {
                         Sistema desenvolvido por <b>Felipe Grellmann de Souza</b>
                     </p>
                     <div className='contato'>
-                        <a href="https://www.linkedin.com/in/felipegrellmann/"><img width="40" className="mx-4" src={iconLinkedin} /></a>
-                        <a href="https://github.com/FelipeGrellmannSouza"><img width="50" className="mx-4" src={iconGitHub} /></a>
+                        <a href="https://www.linkedin.com/in/felipegrellmann/"><img width="40" className="mx-4" src={iconLinkedin} alt='icon Linkedin' /></a>
+                        <a href="https://github.com/FelipeGrellmannSouza"><img width="50" className="mx-4" src={iconGitHub} alt='git icon' /></a>
                     </div>
                 </div>
             </div>

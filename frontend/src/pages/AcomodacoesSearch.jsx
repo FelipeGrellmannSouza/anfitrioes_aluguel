@@ -12,11 +12,13 @@ function AcomodacoesSearch() {
     useEffect(() => {
         const queryParams = new URLSearchParams(location.search);
         const local = queryParams.get('local');
+        const apiUrl = process.env.REACT_APP_API_URL;
+
 
         if (local) {
             const fetchAcomodacoes = async () => {
                 try {
-                    const response = await fetch(`http://127.0.0.1:5000/acomodacoes/search?local=${encodeURIComponent(local)}`);
+                    const response = await fetch(`${apiUrl}/acomodacoes/search?local=${encodeURIComponent(local)}`);
                     const data = await response.json();
                     setAcomodacoes(data.acomodacoes);
                 } catch (error) {

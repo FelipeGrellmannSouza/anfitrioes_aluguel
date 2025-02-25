@@ -6,11 +6,12 @@ import AcomodationDetail from '../components/acomodationDetail/acomodationDetail
 function Details() {
     const id = window.location.href.split('/').pop();
     const [acomodacao, setAcomodacao] = useState(null);
+    const apiUrl = process.env.REACT_APP_API_URL;
 
     useEffect(() => {
         const fetchAcomodacao = async () => {
             try {
-                const response = await fetch(`http://127.0.0.1:5000/acomodacoes/${id}`);
+                const response = await fetch(`${apiUrl}/acomodacoes/${id}`);
                 const data = await response.json();
                 setAcomodacao(data);
             } catch (error) {

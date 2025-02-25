@@ -3,13 +3,14 @@ import { Navbar, Dropdown, Container, Button } from 'react-bootstrap';
 import { Link, useNavigate } from 'react-router-dom';
 
 function MyNavbar() {
+    const apiUrl = process.env.REACT_APP_API_URL;
     const [acomodacoes, setAcomodacoes] = useState([]);
     useEffect(() => {
         fetchAcomodacoes()
     }, [])
 
     const fetchAcomodacoes = async () => {
-        const response = await fetch('http://127.0.0.1:5000/acomodacoes');
+        const response = await fetch(`${apiUrl}/acomodacoes`);
         const data = await response.json();
         setAcomodacoes(data.acomodacoes);
         console.log(data.acomodacoes);
@@ -60,7 +61,7 @@ function MyNavbar() {
                         ))}
                     </Dropdown.Menu>
                 </Dropdown>
-                <Link to={'/acomodacoes/favoritos'}>
+                <Link to={'/acomodacoes/favoritos'} style={{ textDecoration: 'none' }}>
                     <Button style={{ width: '160px' }} variant="danger" className="d-flex align-items-center my-2 my-lg-0 justify-content-center" >
                         Favoritos
                     </Button>
