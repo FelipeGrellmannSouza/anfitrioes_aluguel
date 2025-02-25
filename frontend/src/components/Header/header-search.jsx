@@ -47,8 +47,6 @@ function MyNavbar() {
                         Buscar local
                     </Dropdown.Toggle>
                     <Dropdown.Menu style={{ width: '200px', textAlign: 'center' }}>
-                        {/* Não esta funcionando */}
-
                         <Dropdown.Item as={Link} to="/acomodacoes">
                             Todos os Locais
                         </Dropdown.Item>
