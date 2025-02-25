@@ -13,7 +13,6 @@ function Details() {
                 const response = await fetch(`http://127.0.0.1:5000/acomodacoes/${id}`);
                 const data = await response.json();
                 setAcomodacao(data);
-                console.log(data); // Verifica os dados recebidos
             } catch (error) {
                 console.error('Erro ao buscar a acomodação:', error);
             }

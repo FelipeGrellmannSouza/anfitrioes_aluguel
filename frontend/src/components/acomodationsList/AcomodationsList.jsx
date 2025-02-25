@@ -2,7 +2,7 @@ import React from "react";
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { Link } from 'react-router-dom';
-
+import FavoriteButton from "../Button/FavoriteButton";
 import './acomodationlist.css'
 
 const AcomodationsList = ({ data }) => {
@@ -13,7 +13,6 @@ const AcomodationsList = ({ data }) => {
                     <div key={data.id} className="col-12 col-md-6 col-lg-5 col-xl-4">
                         <Card className="h-100">
                             <Link to={`/acomodacoes/${data.id}`} >
-
                                 <Card.Img
                                     variant="top"
                                     src={data.imagem}
@@ -28,9 +27,7 @@ const AcomodationsList = ({ data }) => {
                                     <Card.Text>
                                         {data.localizacao}
                                     </Card.Text>
-                                    <Button variant="danger" className="mt-auto" >
-                                        Favoritar
-                                    </Button>
+                                    <FavoriteButton acomodacao={data} />
                                 </div>
                             </Card.Body>
                         </Card>

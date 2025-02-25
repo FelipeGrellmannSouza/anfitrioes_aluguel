@@ -15,7 +15,6 @@ function Acomodacoes() {
         const response = await fetch('http://127.0.0.1:5000/acomodacoes')
         const data = await response.json()
         setAcomodacoes(data.acomodacoes)
-        console.log(data.acomodacoes)
     }
 
     return (

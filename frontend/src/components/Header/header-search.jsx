@@ -49,8 +49,6 @@ function MyNavbar() {
                         <Dropdown.Item as={Link} to="/acomodacoes">
                             Todos os Locais
                         </Dropdown.Item>
-
-
                         {locaisUnicos.map((local) => (
                             < Dropdown.Item
                                 href="#/action-1"
@@ -62,9 +60,12 @@ function MyNavbar() {
                         ))}
                     </Dropdown.Menu>
                 </Dropdown>
-                <Button style={{ width: '160px' }} variant="danger" className="d-flex align-items-center my-2 my-lg-0 justify-content-center">
-                    Favoritos
-                </Button>
+                <Link to={'/acomodacoes/favoritos'}>
+                    <Button style={{ width: '160px' }} variant="danger" className="d-flex align-items-center my-2 my-lg-0 justify-content-center" >
+                        Favoritos
+                    </Button>
+                </Link>
+
 
             </Container>
         </Navbar >

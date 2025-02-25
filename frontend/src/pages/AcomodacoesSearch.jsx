@@ -31,10 +31,8 @@ function AcomodacoesSearch() {
 
     return (
         <>
-            {/* Passar aqui como data todas as localizações igual na pagina acomodaçoes*/}
             <HeaderSearch data={fullData} />
             <AcomodationsList data={acomodacoes} />
-
         </>
 
     );
