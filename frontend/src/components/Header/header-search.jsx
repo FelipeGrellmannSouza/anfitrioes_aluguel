@@ -3,7 +3,9 @@ import { Navbar, Dropdown, Container, Button } from 'react-bootstrap';
 import { Link, useNavigate } from 'react-router-dom';
 
 function MyNavbar() {
-    const apiUrl = process.env.REACT_APP_API_URL;
+    // const apiUrl = process.env.REACT_APP_API_URL || "http://127.0.0.1:5000";
+    const apiUrl = 'http://localhost:5000'
+
     const [acomodacoes, setAcomodacoes] = useState([]);
     useEffect(() => {
         fetchAcomodacoes()

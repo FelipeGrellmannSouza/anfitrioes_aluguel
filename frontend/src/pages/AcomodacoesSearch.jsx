@@ -12,7 +12,9 @@ function AcomodacoesSearch() {
     useEffect(() => {
         const queryParams = new URLSearchParams(location.search);
         const local = queryParams.get('local');
-        const apiUrl = process.env.REACT_APP_API_URL;
+        // const apiUrl = process.env.REACT_APP_API_URL;
+        const apiUrl = 'http://localhost:5000'
+
 
 
         if (local) {

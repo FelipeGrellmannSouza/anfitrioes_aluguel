@@ -1,24 +1,28 @@
 version: '3.8'
-
 services:
   backend:
-    build:
-      context: ./backend
-    container_name: backend
+    build: ./backend
     ports:
       - "5000:5000"
     volumes:
-      - ./backend:/app
+      - ./backend/src:/app/src
     environment:
       - FLASK_ENV=development
+    networks:
+      - minha-rede
 
   frontend:
-    build:
-      context: ./frontend
-    container_name: frontend
+    build: ./frontend
     ports:
       - "3000:3000"
+    depends_on:
+      - backend
     volumes:
-      - ./frontend:/app
+      - ./frontend/src:/app/src
     environment:
       - REACT_APP_API_URL=http://backend:5000
+    networks:
+      - minha-rede
+
+networks:
+  minha-rede:

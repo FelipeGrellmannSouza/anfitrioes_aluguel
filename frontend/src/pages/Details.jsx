@@ -6,7 +6,9 @@ import AcomodationDetail from '../components/acomodationDetail/acomodationDetail
 function Details() {
     const id = window.location.href.split('/').pop();
     const [acomodacao, setAcomodacao] = useState(null);
-    const apiUrl = process.env.REACT_APP_API_URL;
+    // const apiUrl = process.env.REACT_APP_API_URL || "http://127.0.0.1:5000";
+    const apiUrl = 'http://localhost:5000'
+
 
     useEffect(() => {
         const fetchAcomodacao = async () => {

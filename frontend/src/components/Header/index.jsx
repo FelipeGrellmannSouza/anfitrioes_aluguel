@@ -26,10 +26,10 @@ function Header() {
                         navbarScroll
                     >
                         <Link to={"/"} className='text-decoration-none'>
-                            <Nav.Link href='#action1'>Home</Nav.Link>
+                            <Nav.Link>Home</Nav.Link>
                         </Link>
                         <Link to={"/acomodacoes"} className='text-decoration-none'>
-                            <Nav.Link href="#action2">Acomodações</Nav.Link>
+                            <Nav.Link>Acomodações</Nav.Link>
 
                         </Link>
                     </Nav>
