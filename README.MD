@@ -9,7 +9,7 @@ Este é um projeto desenvolvido para o **Desafio Anfitriões de Aluguel**, uma a
 - **Python 3.9**
 - **Flask**
 - **Flask-CORS**
-- **SQLite** (para armazenamento de dados temporário)
+- **SQLite**
 
 ### **Frontend** (Interface do Usuário)
 
