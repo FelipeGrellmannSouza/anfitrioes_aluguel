@@ -15,7 +15,7 @@ Este é um projeto desenvolvido para o **Desafio Anfitriões de Aluguel**, uma a
 
 - **React**
 - **Node.js 14**
-- **Styled Components**
+- **Bootsrap**
 
 ### **Infraestrutura**
 
