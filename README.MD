@@ -33,8 +33,7 @@ Antes de iniciar, certifique-se de ter os seguintes requisitos instalados:
 1. **Clone o repositório:**
 
    ```sh
-   git clone https://github.com/seu-usuario/desafio-anfitrioes-aluguel.git
-   cd desafio-anfitrioes-aluguel
+   git clone https://github.com/FelipeGrellmannSouza/anfitrioes_aluguel.git
    ```
 
 2. **Construa e execute os containers:**
