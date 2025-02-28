@@ -63,7 +63,3 @@ Antes de iniciar, certifique-se de ter os seguintes requisitos instalados:
 | GET    | `/acomodacoes/{id}`                 | Retorna detalhes de uma acomodação específica |
 | GET    | `/acomodacoes?cidade=Florianópolis` | Filtra acomodações por cidade                 |
 
----
-
-Se precisar de mais alguma informação ou ajuste, me avise! 🚀
-
